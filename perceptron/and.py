@@ -8,6 +8,7 @@ def f(x):
     '''
     return 1 if x > 0 else 0
 
+
 def get_training_dataset():
     '''
     基于and真值表构建训练数据
@@ -19,6 +20,7 @@ def get_training_dataset():
     # [1,1] -> 1, [0,0] -> 0, [1,0] -> 0, [0,1] -> 0
     labels = [1, 0, 0, 0]
     return input_vecs, labels
+
 
 def train_and_perceptron():
     '''
