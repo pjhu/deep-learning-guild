@@ -1,3 +1,7 @@
 *.pyc
 .idea
 .DS_Store
+t10k-labels-idx1-ubyte
+train-images-idx3-ubyte
+train-labels-idx1-ubyte
+t10k-images-idx3-ubyte
