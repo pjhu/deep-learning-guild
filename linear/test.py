@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from linear_unit import LinearUnit
+from linear import LinearUnit
 
 
 def get_training_dataset():
