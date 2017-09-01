@@ -3,14 +3,21 @@
 workon deepl
 ```
 
-# for submit
+# submit
 ```
 >> cd /path/to/machine-learning-ex2
 >> submit
 ```
 
-# for feature
+# logistic regression
 ```
 >> cd /path/to/machine-learning-ex2
 >> ex2
 ```
+
+# regularized logistic regression
+```
+>> cd /path/to/machine-learning-ex2
+>> ex2
+```
+

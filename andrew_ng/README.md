@@ -87,3 +87,5 @@ Gradient Descent:
 
 # Unsupervised Learning
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like
+
+# Neural Networks
