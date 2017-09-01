@@ -1,20 +1,89 @@
 # Andrew Ng
 https://www.coursera.org/learn/machine-learning
 
-# for submit
+![](./images/X.png)
+
+# Supervised Learning
+In supervised learning, we are given a data set and already know what our correct output should look like.
+
+## Linear Regression
+map input variables to some continuous function
+
+### Hypothesis Function
+![](./images/hypothesis_function.png)
+
+Vector:
 ```
->> cd /path/to/machine-learning-ex1
->> submit
+H(x) = X * θ'
 ```
 
-# for single feature
+### Cost Function
+![](./images/cost_function.png)
+![](./images/cost_function_plot.png)
+
+Vector:
 ```
->> cd /path/to/machine-learning-ex1
->> ex1
+h = X * theta;
+J = (1 / (2*m)) * sum((h - y) .^ 2);
+# J = (1/(2*m)) * ((h-y)' * (h - y));
 ```
 
-# for multi feature
+### Gradient Descent
+![](./images/gradient_descent.png)
+![](./images/gradient_descent_linear.png)
+
+Vector:
 ```
->> cd /path/to/machine-learning-ex1
->> ex1_multi
+h = X * theta;
+theta = theta - X' * ((alpha / m) * (h - y));
+grad = (1.0 ./ m) * X' * (h - y)
 ```
+
+## Normal Equation
+![](./images/normal_equation.png)
+![](./images/compare.png)
+
+
+## Classification
+map input variables into discrete categories.
+
+### Hypothesis Function
+![](./images/classification.png)
+
+### Decision Boundary
+```
+h(x) = g(z)
+z > 0
+Xθ > 0
+```
+![](./images/decision_boundary.png)
+
+### Cost Function
+![](./images/cost_function_classification.png)
+
+### Gradient Descent
+![](./images/gradient_descent_classification.png)
+
+## Overfitting
+
+### Linear
+Cost Function:
+![](./images/overfitting_linear_cf.png)
+
+Gradient Descent:
+![](./images/overfitting_linear_gd.png)
+
+Normal Equation:
+![](./images/overfitting_ne.png)
+
+### Logistic
+
+Cost Function:
+![](./images/overfitting_logistic_cf.png)
+
+Gradient Descent:
+![](./images/overfitting_logistic_gd.png)
+
+
+# Unsupervised Learning
+Unsupervised learning allows us to approach problems with little or no idea what our results should look like
