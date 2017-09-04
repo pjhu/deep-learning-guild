@@ -84,8 +84,19 @@ Cost Function:
 Gradient Descent:
 ![](./images/overfitting_logistic_gd.png)
 
+# Neural Networks
+Flow:
+![](./images/nn_flow_1.png)
+Theta:
+![](./images/nn_theta_1.png)
+Flow:
+![](./images/nn_flow_2.png)
+Theta:
+![](./images/nn_theta_2.png)
+
+![](./images/nn_d.png)
 
 # Unsupervised Learning
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like
 
-# Neural Networks
+
