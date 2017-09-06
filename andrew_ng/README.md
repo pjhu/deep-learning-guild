@@ -72,6 +72,9 @@ Cost Function:
 
 Gradient Descent:
 ![](./images/overfitting_linear_gd.png)
+```
+grad = 1.0 / m * X' * (h -y) + lambda / m * ([0;theta(2:end,:)]);
+```
 
 Normal Equation:
 ![](./images/overfitting_ne.png)
@@ -95,6 +98,46 @@ Theta:
 ![](./images/nn_theta_2.png)
 
 ![](./images/nn_d.png)
+
+## Backpropagation 
+https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95
+https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+
+# Advice for Applying Machine Learning
+
+## Model Selection
+break down our dataset into the three sets:
+Training set: 60%
+Cross validation set: 20%
+Test set: 20%
+![](./images/model_selection_1.png)
+![](./images/model_selection_2.png)
+
+For Regularization:
+![](./images/model_selection_3.png)
+
+## Bias vs. Variance
+![](./images/model_selection_4.png)
+![](./images/model_selection_5.png)
+
+### high bias
+Low training set size: causes Jtrain(Θ) to be low and JCV(Θ) to be high.
+
+Large training set size: causes both Jtrain(Θ) and JCV(Θ) to be high with Jtrain(Θ)≈JCV(Θ).
+
+If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much.
+
+![](./images/model_selection_6.png)
+
+### high variance
+
+Low training set size: Jtrain(Θ) will be low and JCV(Θ) will be high.
+
+Large training set size: Jtrain(Θ) increases with training set size and JCV(Θ) continues to decrease without leveling off. Also, Jtrain(Θ) < JCV(Θ) but the difference between them remains significant.
+
+If a learning algorithm is suffering from high variance, getting more training data is likely to help.
+
+![](./images/model_selection_7.png)
 
 # Unsupervised Learning
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like
