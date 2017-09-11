@@ -8,6 +8,7 @@ In supervised learning, we are given a data set and already know what our correc
 
 ## Linear Regression
 map input variables to some continuous function
+![](./images/linear.png)
 
 ### Hypothesis Function
 ![](./images/hypothesis_function.png)
