@@ -140,6 +140,10 @@ If a learning algorithm is suffering from high variance, getting more training d
 
 ![](./images/model_selection_7.png)
 
+# kernel
+![](./images/svm_1.png)
+![](./images/svm_2.png)
+
 # Unsupervised Learning
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like
 
