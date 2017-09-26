@@ -150,10 +150,23 @@ Unsupervised learning allows us to approach problems with little or no idea what
 ## K-Means
 ![](./images/K-Means.png)
 
-## PCA
+## PCA(Principal Component Analysis)
 Compression:
 Reduce memory/disk needed to store data
 Speed up learning algorithm
 Visualiza1on(2D/3D)
+
+### covariance matrix
+![](./images/cov_matrix.png)
+
+## Anomaly detection
+![](./images/anomaly_1.png)
+![](./images/anomaly_2.png)
+![](./images/anomaly_3.png)
+
+## Recommender Systems
+![](./images/recommender_1.png)
+![](./images/recommender_2.png)
+
 
 
