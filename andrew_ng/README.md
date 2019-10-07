@@ -19,8 +19,11 @@ H(x) = X * θ'
 ```
 
 ### Cost Function
-![](./images/cost_function.png)
-![](./images/cost_function_plot.png)
+https://www.coursera.org/learn/machine-learning/supplement/nhzyF/cost-function
+
+https://www.coursera.org/learn/machine-learning/supplement/u3qF5/cost-function-intuition-i
+
+https://www.coursera.org/learn/machine-learning/supplement/9SEeJ/cost-function-intuition-ii
 
 Vector:
 ```
@@ -30,8 +33,17 @@ J = (1 / (2*m)) * sum((h - y) .^ 2);
 ```
 
 ### Gradient Descent
-![](./images/gradient_descent.png)
-![](./images/gradient_descent_linear.png)
+https://www.coursera.org/learn/machine-learning/supplement/QKEdR/gradient-descent-intuition
+
+https://www.coursera.org/learn/machine-learning/supplement/U90DX/gradient-descent-for-linear-regression
+
+https://www.coursera.org/learn/machine-learning/supplement/aEN5G/gradient-descent-for-multiple-variables
+
+##### Feature Scaling
+https://www.coursera.org/learn/machine-learning/supplement/CTA0D/gradient-descent-in-practice-i-feature-scaling
+
+##### Learning Rate
+https://www.coursera.org/learn/machine-learning/supplement/TnHvV/gradient-descent-in-practice-ii-learning-rate
 
 Vector:
 ```
@@ -41,85 +53,83 @@ grad = (1.0 ./ m) * X' * (h - y)
 ```
 
 ## Normal Equation
-![](./images/normal_equation.png)
-![](./images/compare.png)
 
+https://www.coursera.org/learn/machine-learning/supplement/bjjZW/normal-equation
 
-## Classification
+### Compaire
+With the normal equation, computing the inversion has complexity O(n3). So if we have a very large number of features, the normal equation will be slow. In practice, when n exceeds 10,000 it might be a good time to go from a normal solution to an iterative process.
+
+## Classification (Logistic Regression / Sigmoid Function)
 map input variables into discrete categories.
 
 ### Hypothesis Function
+https://www.coursera.org/learn/machine-learning/supplement/AqSH6/hypothesis-representation
+
 ![](./images/classification.png)
 
 ### Decision Boundary
-```
-h(x) = g(z)
-z > 0
-Xθ > 0
-```
-![](./images/decision_boundary.png)
+https://www.coursera.org/learn/machine-learning/supplement/N8qsm/decision-boundary
 
 ### Cost Function
-![](./images/cost_function_classification.png)
+https://www.coursera.org/learn/machine-learning/supplement/bgEt4/cost-function
 
 ### Gradient Descent
-![](./images/gradient_descent_classification.png)
+https://www.coursera.org/learn/machine-learning/supplement/HuE6M/multiclass-classification-one-vs-all
 
 ## Overfitting
 
-### Linear
-Cost Function:
-![](./images/overfitting_linear_cf.png)
+https://www.coursera.org/learn/machine-learning/supplement/VTe37/the-problem-of-overfitting
 
-Gradient Descent:
-![](./images/overfitting_linear_gd.png)
+### Cost Function
+
+https://www.coursera.org/learn/machine-learning/supplement/1tJlY/cost-function
+
+### Linear
+https://www.coursera.org/learn/machine-learning/supplement/pKAsc/regularized-linear-regression
+
 ```
 grad = 1.0 / m * X' * (h -y) + lambda / m * ([0;theta(2:end,:)]);
 ```
 
-Normal Equation:
-![](./images/overfitting_ne.png)
-
 ### Logistic
 
-Cost Function:
-![](./images/overfitting_logistic_cf.png)
+https://www.coursera.org/learn/machine-learning/supplement/v51eg/regularized-logistic-regression
 
-Gradient Descent:
-![](./images/overfitting_logistic_gd.png)
+## Classification (Nature Network)
 
-# Neural Networks
-Flow:
-![](./images/nn_flow_1.png)
-Theta:
-![](./images/nn_theta_1.png)
-Flow:
-![](./images/nn_flow_2.png)
-Theta:
-![](./images/nn_theta_2.png)
+simple logistic regression together with adding in maybe the quadratic or the cubic features - that's just not a good way to learn complex nonlinear hypotheses when n is large because you just end up with too many features. In the next few videos, I would like to tell you about Neural Networks, which turns out to be a much better way to learn complex hypotheses, complex nonlinear hypotheses even when your input feature space, even when n is large(因此 只是简单的增加 二次项或者三次项 之类的逻辑回归算法 并不是一个解决 复杂非线性问题的好办法 因为当n很大时 将会产生非常多的特征项 在接下来的视频课程中 我将为大家讲解神经网络 它在解决复杂的非线性分类问题上 被证明是 是一种好得多的算法 即使你输入特征空间 或输入的特征维数n很大也能轻松搞定)
 
-![](./images/nn_d.png)
+### Model (Hypothesis Function)
+https://www.coursera.org/learn/machine-learning/supplement/Bln5m/model-representation-i
 
-## Backpropagation 
+https://www.coursera.org/learn/machine-learning/supplement/YlEVx/model-representation-ii
+
+### Cost Function
+https://www.coursera.org/learn/machine-learning/supplement/afqGa/cost-function
+
+### Backpropagation 
 https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD%E7%AE%97%E6%B3%95
+
+https://www.zhihu.com/question/27239198
+
 https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+
+https://www.cnblogs.com/charlotte77/p/5629865.html
 
 # Advice for Applying Machine Learning
 
 ## Model Selection
+
+https://www.coursera.org/learn/machine-learning/supplement/aFpD3/evaluating-a-hypothesis
+
+https://www.coursera.org/learn/machine-learning/supplement/XHQqO/model-selection-and-train-validation-test-sets
+
 break down our dataset into the three sets:
 Training set: 60%
 Cross validation set: 20%
 Test set: 20%
-![](./images/model_selection_1.png)
-![](./images/model_selection_2.png)
-
-For Regularization:
-![](./images/model_selection_3.png)
 
 ## Bias vs. Variance
-![](./images/model_selection_4.png)
-![](./images/model_selection_5.png)
 
 ### high bias
 Low training set size: causes Jtrain(Θ) to be low and JCV(Θ) to be high.
@@ -127,8 +137,6 @@ Low training set size: causes Jtrain(Θ) to be low and JCV(Θ) to be high.
 Large training set size: causes both Jtrain(Θ) and JCV(Θ) to be high with Jtrain(Θ)≈JCV(Θ).
 
 If a learning algorithm is suffering from high bias, getting more training data will not (by itself) help much.
-
-![](./images/model_selection_6.png)
 
 ### high variance
 
@@ -138,17 +146,32 @@ Large training set size: Jtrain(Θ) increases with training set size and JCV(Θ)
 
 If a learning algorithm is suffering from high variance, getting more training data is likely to help.
 
-![](./images/model_selection_7.png)
+## Prioritizing What to Work On
 
-## kernel
-![](./images/svm_1.png)
-![](./images/svm_2.png)
+https://www.coursera.org/learn/machine-learning/supplement/0uu7a/prioritizing-what-to-work-on
+
+1. Collect lots of data
+2. Develop sophisticated features
+3. Develop algorithms to process your input in different ways
+
+## Error Analysis
+https://www.coursera.org/learn/machine-learning/supplement/Z11RP/error-analysis
+
+1. Start with a simple algorithm, implement it quickly, and test it early on your cross validation data.
+2. Plot learning curves to decide if more data, more features, etc. are likely to help.
+3. Manually examine the errors on examples in the cross validation set and try to spot a trend where most of the errors were made
+
+## Skewed Classes
+
+# Support Vector Machines(支持向量机,SVM)
+
+## Large Margin Classification
+## Kernels
 
 # Unsupervised Learning
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like
 
 ## K-Means
-![](./images/K-Means.png)
 
 ## PCA(Principal Component Analysis)
 Compression:
@@ -157,19 +180,12 @@ Speed up learning algorithm
 Visualiza1on(2D/3D)
 
 ### covariance matrix
-![](./images/cov_matrix.png)
 
 ## Anomaly detection
-![](./images/anomaly_1.png)
-![](./images/anomaly_2.png)
-![](./images/anomaly_3.png)
 
 ## Recommender Systems
-![](./images/recommender_1.png)
-![](./images/recommender_2.png)
 
 ## Summary
-![](./images/summary.png)
 
 
 
