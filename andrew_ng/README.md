@@ -164,29 +164,13 @@ https://www.coursera.org/learn/machine-learning/supplement/Z11RP/error-analysis
 ## Skewed Classes
 
 # Support Vector Machines(支持向量机,SVM)
-
-## Large Margin Classification
-## Kernels
+1. Large Margin Classification
+2. Kernels
 
 # Unsupervised Learning
 Unsupervised learning allows us to approach problems with little or no idea what our results should look like
 
-## K-Means
-
-## PCA(Principal Component Analysis)
-Compression:
-Reduce memory/disk needed to store data
-Speed up learning algorithm
-Visualiza1on(2D/3D)
-
-### covariance matrix
-
-## Anomaly detection
-
-## Recommender Systems
-
-## Summary
-
-
-
-
+1. K-Means
+2. PCA(Principal Component Analysis)
+3. Anomaly detection
+4. Recommender Systemss
