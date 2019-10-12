@@ -93,6 +93,15 @@ Delta2 = delta3' * a2;
 Theta1_grad = 1/m * Delta1 + [zeros(size(Theta1, 1), 1), lambda/m * Theta1(:, 2:end)];
 Theta2_grad = 1/m * Delta2 + [zeros(size(Theta2, 1), 1), lambda/m * Theta2(:, 2:end)];
 
+% fprintf(['Theta1.shape: (%d, %d)\n'], size(Theta1));
+% fprintf(['Theta2.shape: (%d, %d)\n'], size(Theta2));
+% fprintf(['a1.shape: (%d, %d)\n'], size(a1));
+% fprintf(['a2.shape: (%d, %d)\n'], size(a2));
+% fprintf(['a3.shape: (%d, %d)\n'], size(a3));
+% fprintf(['delta3.shape: (%d, %d)\n'], size(delta3));
+% fprintf(['delta2.shape: (%d, %d)\n'], size(delta2));
+% fprintf(['Delta1.shape: (%d, %d)\n'], size(Delta1));
+% fprintf(['Delta2.shape: (%d, %d)\n'], size(Delta2));
 
 % -------------------------------------------------------------
 

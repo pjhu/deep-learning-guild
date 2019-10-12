@@ -61,6 +61,7 @@ With the normal equation, computing the inversion has complexity O(n3). So if we
 
 ## Classification (Logistic Regression / Sigmoid Function)
 map input variables into discrete categories.
+https://blog.csdn.net/zlbflying/article/details/47777943 （伯努利分布）
 
 ### Hypothesis Function
 https://www.coursera.org/learn/machine-learning/supplement/AqSH6/hypothesis-representation
